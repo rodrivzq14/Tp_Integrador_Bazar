@@ -1,4 +1,4 @@
-# PruebaTecBazar - Bazar API (Spring Boot)
+# TpIntegradorBazar - Bazar API (Spring Boot)
 
 API REST para gestionar **Productos**, **Clientes** y **Ventas** en un bazar, con manejo automático de stock, validaciones y DTOs para requests/responses.
 

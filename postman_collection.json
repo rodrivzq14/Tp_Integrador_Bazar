@@ -1,0 +1,442 @@
+{
+  "info": {
+    "_postman_id": "fe3047f3-1724-440c-8d1c-19364afb6c88",
+    "name": "Tp_Integrador_Bazar",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "41830849"
+  },
+  "item": [
+    {
+      "name": "localhost:8080/productos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/productos",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "productos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/productos/1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/productos/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "productos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/productos/falta_stock",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/productos/falta_stock",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "productos",
+            "falta_stock"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/productos/crear",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\" : \"Pan\",\r\n    \"marca\" : \"Lactal\",\r\n    \"costo\" : 3000.0,\r\n    \"cantidadDisponible\" : 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/productos/crear",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "productos",
+            "crear"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/productos/editar/1",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\" : \"Pan\",\r\n    \"marca\" : \"Lactal\",\r\n    \"costo\" : 3000.0,\r\n    \"cantidadDisponible\" : 10\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/productos/editar/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "productos",
+            "editar",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/productos/eliminar/1",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/productos/eliminar/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "productos",
+            "eliminar",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/clientes",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/clientes",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "clientes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/clientes/1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/clientes/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "clientes",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/clientes/crear",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\" : \"Leonel\",\r\n    \"apellido\" : \"Messi\",\r\n    \"dni\" : \"10101010\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/clientes/crear",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "clientes",
+            "crear"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/clientes/editar/1",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\" : \"Leonel\",\r\n    \"apellido\" : \"Messi\",\r\n    \"dni\" : \"10101020\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/clientes/editar/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "clientes",
+            "editar",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/clientes/eliminar/1",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/clientes/eliminar/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "clientes",
+            "eliminar",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/ventas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/ventas",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "ventas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/ventas/1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/ventas/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "ventas",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/ventas/productos/1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/ventas/productos/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "ventas",
+            "productos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/ventas/estadisticas/2026-05-09",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/ventas/estadisticas/2026-05-09",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "ventas",
+            "estadisticas",
+            "2026-05-09"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/ventas/mayor_venta",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/ventas/mayor_venta",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "ventas",
+            "mayor_venta"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/ventas/crear",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"fechaVenta\" : \"2026-05-09\",\r\n    \"total\" : 6000,\r\n    \"listaProductos\" : [1, 1],\r\n    \"idCliente\" : 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/ventas/crear",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "ventas",
+            "crear"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/ventas/editar/1",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"fechaVenta\" : \"2026-05-09\",\r\n    \"total\" : 3000,\r\n    \"listaProductos\" : [1],\r\n    \"idCliente\" : 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/ventas/editar/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "ventas",
+            "editar",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/ventas/eliminar/1",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/ventas/eliminar/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "ventas",
+            "eliminar",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
